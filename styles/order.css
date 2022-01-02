@@ -7,7 +7,7 @@
   color: white;
   padding: 15px;
 }
-.order__product-info h4 {
+.order__product-info h4 a {
   color: var(--ui-background);
 }
 .order {

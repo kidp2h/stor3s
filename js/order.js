@@ -18,7 +18,7 @@ function loadOrders() {
             <img src="${item.product.img}" alt="" srcset="">
           </div>
           <div class="order__product-info">
-            <h4>${item.product.name}</h4>
+            <h4><a href="./detail.html?id=${item.product.id}">Orders${item.product.name}</a></h4>
             <span>QTY : ${item.quantity}</span>
             <span>Price : ${formatMoney(item.product.price)}</span>
           </div>
