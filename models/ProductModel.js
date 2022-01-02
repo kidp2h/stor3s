@@ -47,14 +47,14 @@ const ProductModel = {
   },
   Pagination(c,m) {
     let current = c,
-      left = current - 1,
-      right = current + 3,
+      left = current - 2,
+      right = current + 2,
       range = [],
       rangeWithDots = [],
       l;
 
     for (let i = 1; i <= m; i++) {
-      if (i == 1 || (i >= left && i < right) || i == m) {
+      if (i == 1 || (i > left && i <= right) || i == m) {
         range.push(i);
       }
     }
