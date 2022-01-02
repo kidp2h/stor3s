@@ -1,0 +1,132 @@
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: var(--ui-background);
+  transition: ease-in-out 0.3s;
+  border-left: 10px solid var(--ui-background);
+  user-select: none;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.sidebar.active {
+  width: 80px;
+}
+
+.sidebar.active li a span {
+  animation-name: sidebar_active;
+  animation-duration: 0.5s;
+}
+
+.sidebar li a span {
+  animation-name: sidebar;
+  animation-duration: 0.5s;
+}
+
+.sidebar ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  position: relative;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: white;
+}
+
+.sidebar ul li:nth-child(1) {
+  margin-bottom: 40px;
+  background-color: var(--ui-background);
+}
+.sidebar ul li:nth-child(1) span:hover {
+  color: white;
+}
+.sidebar ul li:nth-child(1):hover {
+  color: white;
+}
+
+.sidebar ul li:nth-child(1):hover a::before,
+.sidebar ul li.active:nth-child(1) a::before {
+  background-color: var(--ui-background);
+  color: white;
+  content: 0;
+  box-shadow: none;
+}
+.sidebar ul li:nth-child(1):hover a::after,
+.sidebar ul li.active:nth-child(1) a::after {
+  background-color: var(--ui-background);
+  color: white;
+  content: 0;
+  box-shadow: none;
+}
+
+.sidebar ul li a {
+  position: relative;
+  display: flex;
+}
+
+.sidebar ul li a i {
+  position: relative;
+  line-height: 60px;
+  min-width: 60px;
+  text-align: center;
+  height: 60px;
+  font-size: 1.5em;
+}
+.sidebar ul li a .title {
+  line-height: 60px;
+  text-align: start;
+  height: 60px;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 0 10px;
+  white-space: normal;
+}
+
+.sidebar ul li:hover > a,
+.sidebar ul li.active > a {
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+.item {
+  color: white;
+}
+
+.sidebar ul li:hover a::before,
+.sidebar ul li.active a::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 35px 35px 0 10px white;
+  pointer-events: none;
+  transition: ease-in-out 1s;
+}
+
+.sidebar ul li.active a::after,
+.sidebar ul li:hover a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 35px -35px 0px 10px white;
+  pointer-events: none;
+}
+.sidebar ul li:hover i,
+.sidebar ul li.active i {
+  color: var(--ui-background);
+}

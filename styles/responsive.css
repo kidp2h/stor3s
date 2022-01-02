@@ -1,0 +1,168 @@
+
+@media screen and (min-width:1366px) {
+  #img-discover{
+
+  }
+}
+@media screen and (max-width: 1050px){
+  #img-discover {
+    display: none;
+  }
+  #discover-shop {
+    justify-content: flex-start
+  }
+
+}
+@media screen and (max-width: 920px){
+  .product-detail {
+    flex-direction: column !important;
+    justify-content:center;
+    align-items:center
+  }
+  .info-product {
+    justify-content:space-between;
+    height:500px
+  }
+  .item-info{
+    min-width:250px !important
+  }
+  .modal-user {
+    width: 100% !important;
+  }
+  #contact {
+    zoom: 90%;
+  }
+  .about {
+    padding: 50px;
+  }
+  .product-detail .image-product {
+    width:300px !important;
+    height:300px !important;
+  }
+}
+
+@media screen and (min-width: 560px){
+  .bottom-bar{
+    display: none
+  }
+  
+}
+@media screen and (max-width: 560px){
+  .sidebar {
+    display:none
+  }
+  footer {
+    display: none !important
+  }
+  .main-content {
+    position: absolute;
+    width: 100%  !important;
+    left: 0px !important;
+    min-height: 100vh;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .toggle {
+    display: none
+  }
+  .toggle .user {
+    justify-content: flex-end !important;
+  }
+  #title-discover{
+    font-size:2em
+  }
+  #small-title-discover {
+    font-size:1em
+  }
+  .top-bar, .user {
+    display: flex;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .top-bar .user i {
+    margin: 15px;
+  }
+  .discover-figure div {
+    margin: 15px;
+  }
+  .sidecart.active{
+    width: 100% !important;
+  }
+  .filter .wrap-brand {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+  }
+  .filter .byBrand {
+    align-items: flex-start
+  }
+  .list-product-in-order {
+    width:auto !important;
+  }
+  .list-orders {
+    width:auto !important;
+  }
+  .img-box img {
+    margin-right: 10px !important;
+  }
+  .product-order {
+    margin: 5px 10px !important;
+  }
+  #contact {
+    zoom: 80%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  /* * {
+    background-color:red
+  } */
+  .image-product {
+    zoom: 85%;
+    width: 100%;
+    height: 100%;
+  }
+  .name-product {
+    font-size:1.5em !important;
+  }
+  .category-product {
+    font-size:0.8em !important
+  }
+  .info-product {
+    align-items: center;
+  }
+  .group-form-product {
+    flex-direction: column;
+  }
+  .group-form-product span{
+    margin-right: 0em !important;
+  }
+  .product-detail .btn {
+    width:100%;
+  }
+  .main-images img {
+    width: 250px !important;
+  }
+  .popular-product {
+    width: 250px !important;
+  }
+  .filter .rangePrice input{
+    width:70px !important;
+  }
+  .item-info{
+    min-width:200px !important
+  }
+}
+.order__total{
+  display: flex;
+  background-color:var(--ui-background);
+  color:white;
+  padding:15px;
+  font-size:1.5em;
+  justify-content:flex-end
+}
+.order__total span {
+  text-transform: uppercase;
+}

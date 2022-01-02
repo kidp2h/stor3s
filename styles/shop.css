@@ -1,0 +1,140 @@
+.pagination {
+  width: fit-content;
+  height: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content:center;
+  align-items:center
+}
+.pagination ul  {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.pagination li {
+  margin: 0px 5px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--ui-background);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--ui-background);
+  transition: all 0.2s;
+  user-select: none;
+
+}
+.pagination li.active, .pagination li:hover {
+  background-color: var(--ui-background);
+  color: white;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content:center
+}
+
+.prev, .next {
+  width:40px;
+  height:40px;
+  border: 1px solid;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid var(--red);
+  border-radius:5px;
+  color:red;
+  transition: all 0.3s;
+  user-select: none;
+  font-weight: bold;
+  font-size:1.5em;
+  cursor: pointer
+}
+.prev i:hover, .next i:hover {
+  color: white;
+  cursor: pointer;
+}
+.prev:hover, .next:hover {
+  color: white;
+  background-color: var(--red)
+  
+}
+.three-dots{
+  pointer-events: none;
+  font-weight: bold;
+  font-size:1.5em;
+  cursor:not-allowed;
+  user-select: none;
+}
+
+.filter {
+  display: flex;
+  margin-left: 30px;
+  flex-direction: column;
+}
+.filter h2 {
+  color: var(--ui-background);
+  text-transform: uppercase;  
+}
+
+.filter div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter div span {
+  margin-right:20px;
+  font-size:1.25em
+}
+.filter .wrap-brand {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start
+}
+.filter .byBrand {
+  align-items: flex-start
+}
+.wrap-brand .brand {
+  cursor: pointer;
+  border-radius: 5px;
+  border:1px solid var(--ui-background);
+  padding: 2px 5px;
+  margin: 5px;
+  user-select: none;
+}
+.filter div div.active {
+  background: var(--ui-background);
+  color: white; 
+}
+.filter div div img {
+  margin-right:10px;
+  object-fit: contain;
+  width:20px;
+  height: 20px;
+}
+.filter .rangePrice input{
+  width:100px;
+  border:1px solid var(--ui-background);
+  padding: 5px;
+  margin: 0px 11px;
+  border-radius: 5px; 
+}
+
+.filter .rangePrice span{
+margin-right:25px
+}
+
+.byName input {
+  width: 190px;
+  border: 1px solid var(--ui-background);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+.btn-filter {
+  margin-top: 20px;
+}

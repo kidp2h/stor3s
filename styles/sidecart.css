@@ -1,0 +1,120 @@
+.sidecart.active {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  right: 0px;
+  background-color: #6050f1ce;
+  backdrop-filter: blur(15px);
+  z-index: 9999999999999999999999;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  animation:slide 0.3s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(400px)
+  }
+  to{
+    transform: translateX(0px)
+  }
+}
+.sidecart__header {
+  display: flex;
+  justify-content:space-between;
+  padding: 5px 20px;
+  align-items:center;
+  color: white;
+  border-bottom:1px solid white
+}
+.sidecart__header i:hover {
+  color: var(--red);
+  cursor: pointer;
+}
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  color:white;
+}
+.subtotal div {
+  width:100%;
+  border-radius: 0px;
+  height:50px;
+  background-color: transparent;
+  border-top: 1px solid white;
+  transition:all 1s;
+}
+.subtotal div:hover {
+  background-color: var(--red);
+}
+.cart__list-products{
+  overflow-y: scroll;
+  height:100%;
+}
+.cart__list-products::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.cart__item {
+  padding: 10px;
+  display:flex;
+}
+.item-info {
+  margin-left: 15px;
+  color: white;
+  min-width: 250px;
+}
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid white;
+  border-radius:5px;
+}
+
+.action {
+  border-radius: 50%;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+  margin: auto;
+  transition: all 0.5s;
+  max-width: 30px;
+  min-width :30px;
+  min-height: 30px;
+  max-height: 30px;
+
+}
+.action:hover {
+  background-color: var(--red);
+}
+.increase-qty {
+  width:75px;
+  display: flex;
+  border:1px solid;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 5px;
+}
+.input-qty {
+  width: 30px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  color: white;
+  padding: 4px;
+  text-align: center;
+
+}
+.increase-qty span {
+  cursor: pointer;
+  user-select: none;
+  padding: 0 5px;
+}

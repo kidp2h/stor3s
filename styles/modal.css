@@ -1,0 +1,183 @@
+.modal-user {
+  position: fixed;
+  width: 500px;
+  height: 100%;
+  background-color: #6050f194;
+  z-index: 999999999999999999999999999999999;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  color: white;
+  border: 1px solid white;
+  display: none;
+  overflow: hidden;
+}
+.modal-logo {
+  display: flex;
+  justify-content: center;
+}
+.modal-user.active {
+  display: block;
+  animation: slideD 0.3s;
+}
+@keyframes slideD {
+  from {
+    opacity: 0.5;
+    transform: translate(-50%, -200%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.modal-user.active ~ .overlay-modal {
+  display: block;
+}
+.mdc { 
+  display:none;
+  transition: 1s;
+}
+.mdc.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-modal.active {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+  position: fixed;
+  z-index: 9999999999999999999;
+  display: block;
+}
+.modal-user .close {
+  font-size: 2em;
+  cursor: pointer;
+}
+.close:hover {
+  color: var(--red);
+}
+.modal-user .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 10%;
+}
+.form .form__group {
+  display: flex;
+  flex-direction: column;
+}
+.form__group {
+  margin-bottom: 5px;
+}
+.form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form #username,
+#password {
+  padding: 5px;
+  padding-left: 5px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: var(--ui-background);
+  color: white;
+}
+.form span {
+  margin-bottom: 5px;
+}
+.form #login , #register {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+}
+.login-with {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+.login-with i {
+  font-size: 2em;
+}
+.fb:hover {
+  color: #0c88ef;
+}
+.apple:hover {
+  color: black;
+}
+.github:hover {
+  color: var(--red);
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.sign-up-forgot {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+.sign-up-forgot span {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 1s;
+  user-select: none;
+}
+.sign-up-forgot span:hover {
+  color: var(--red);
+}
+
+.form-register .col-2 {
+  display: flex;
+  flex-direction: row;
+}
+.form-register .form #_username,#_password,#fullname, .password, #address, #email, #phone {
+  padding:5px;
+  padding-left: 5px;
+  border-radius:50px;
+  border: 1px solid white;
+  background-color: var(--ui-background);
+  color: white;
+  width:100%
+}
+#_password {
+  width: 100%;
+}
+
+.form-register .form__group div {
+  display: flex;
+  flex-direction: column;
+}
+.group__username {
+  margin-right: 5px;
+}
+.toSignIn {
+  margin-top: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size:0.7em
+}
+.toSignIn:hover {
+  color: black;
+}
+.form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+  font-size: 0.9em;
+}
+
+.login-with i:hover {
+  cursor: pointer;
+}

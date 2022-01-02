@@ -1,0 +1,64 @@
+.about {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+
+}
+.about__wrap {
+
+}
+.about p {
+  font-size:1.5em;
+  word-break: break-word;
+}
+.about__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-radius: 7px;;
+  padding: 10px;
+  background-color: var(--ui-background);
+  color: white;
+  width:250px;
+  max-width:250px
+}
+.img-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin:auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.about__card img {
+  width: 100px;
+  height: 100px;
+}
+.wrap__about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fullname_user {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.feedback {
+  text-align: center;
+}

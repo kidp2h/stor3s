@@ -1,0 +1,68 @@
+.bottom-bar {
+  background-color: var(--ui-background);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0px;
+  z-index: 999999;
+  width: 100%;
+  border-bottom: 5px solid var(--ui-background);
+  overflow: hidden;
+}
+.bottom-bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-bar li {
+  color: black;
+  font-size: 1.7em;
+  width:50px;
+  height: 50px;
+  text-align: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: relative;
+}
+
+.bottom-bar a {
+  color: white;
+}
+.bottom-bar ul li.active a,.bottom-bar ul li:hover a{
+  color: var(--ui-background);
+}
+.bottom-bar ul li:hover,
+.bottom-bar ul li.active {
+  background-color: white;
+}
+
+
+.bottom-bar ul li:hover a::before, .bottom-bar ul li.active a::before {
+  height: 40px;
+  content: '';
+  position: absolute;
+  background-color: var(--ui-background);
+  left: 50px;
+  top: 0;
+  border-radius: 50%;
+  width: 40px;
+  box-shadow: -20px -20px 0 white;
+}
+
+.bottom-bar ul li.active a::after, .bottom-bar ul li:hover a::after {
+  height: 40px;
+  content: '';
+  position: absolute;
+  background-color: var(--ui-background);
+  right: 50px;
+  top: 0;
+  border-radius: 50%;
+  width: 40px;
+  box-shadow: 20px -20px 0 white;
+}
+
+.bottom-bar i:hover {
+  color: var(--ui-background);
+}
+.bottom-bar i {
+  font-size:0.85em
+}

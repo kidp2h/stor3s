@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../icons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/topbar.css" />
+    <link rel="stylesheet" href="../styles/burger.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/card.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/bottombar.css">
+    <link rel="stylesheet" href="../styles/sidecart.css">
+    <link rel="stylesheet" href="../styles/toast.css">
+    <title>Home</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="overlay-modal"></div>
+      <div class="modal-user">
+        <div class="modal-header">
+          <h2 class="title">
+            <i class="ion-person"></i> 
+            <span>Login</span>
+          </h2>
+          <i class="ion-close-circled close"></i>
+        </div>
+        <div class="modal-content">
+          <div class="mdc modal-content-login active">
+            <div class="modal-logo">
+              <img src="../images/logo.svg" alt="" srcset="" width="100" height="100">
+            </div>
+            <div class="form">
+              <div class="form__group">
+                <span>Username</span>
+                <input type="text" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form__group">
+                <span>Password</span>
+                <input type="password" id="password" placeholder="Enter your password">
+              </div>
+              
+              <button id="login">Login</button>
+            </div>
+            <span style="user-select: none">⎯⎯⎯⎯⎯ OR LOGIN WITH ⎯⎯⎯⎯⎯</span>
+            <div class="login-with">
+              <i class="ion-social-twitter-outline twitter"></i>
+              <i class="ion-social-github-outline github"></i>
+              <i class="ion-social-apple-outline apple"></i>
+              <i class="ion-social-facebook-outline fb"></i>
+            </div>
+            <div class="sign-up-forgot toSignUp">
+              <span >you don't have account ?</span>
+              <span>Forgot password</span>
+            </div>
+          </div>
+          <div class="mdc modal-content-register form-register ">
+            <div class="modal-logo">
+              <img src="../images/logo.svg" alt="" srcset="" width="100" height="100">
+            </div>
+            <div class="form">
+              <div class="form__group col-2">
+                <div class="group__username">
+                  <span>Username</span>
+                  <input type="text" id="_username" placeholder="Enter your username">
+                </div>
+                <div>
+                  <span>Full name</span>
+                  <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <span>Phone number</span>
+                <input type="text" id="phone" placeholder="Enter your phone number ">
+              </div>
+              <div class="form__group">
+                <div class="group__username">
+                  <span>Password</span>
+                  <input type="password" id="_password" placeholder="Enter your password">
+                </div>
+                <div>
+                  <span>Confirm Password</span>
+                  <input type="password" id="re-password" class="password" placeholder="Re-enter your password">
+                </div>
+              </div>
+              <div class="form__group">
+                <span>Address</span>
+                <input type="text" id="address" placeholder="Enter your address">
+              </div>
+              <button id="register">Register</button>
+            </div>
+            <div class="toSignIn">
+              <span>you want to sign in ?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar active">
+        <ul>
+          <li>
+            <a class="item" href="./index.html">
+              <img src="../images/logo.svg" alt="logo" width="60" height="60" />
+              <span class="title">Stor3S</span>
+            </a>
+          </li>
+          <li class="active m-dashboard">
+            <a class="item">
+              <i class="ion-ios-home-outline"></i>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="m-user">
+            <a class="item" href="./contact.html">
+              <i class="ion-ios-telephone-outline"></i>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+          <li class="m-product">
+            <a class="item" href="./shop.html">
+              <i class="ion-ios-pricetags-outline"></i>
+              <span class="title">Shop</span>
+            </a>
+          </li>
+          <li class="m-category">
+            <a class="item" href="./about.html">
+              <i class="ion-ios-information-outline"></i>
+              <span class="title">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-bar">
+        <ul>
+          <li class="active"><a><i class="ion-ios-home-outline"></i></a></li>
+          <li class=""><a href="./contact.html"><i class="ion-ios-telephone-outline"></i></a></li>
+          <li class=""><a href="./shop.html"><i class="ion-ios-pricetags-outline"></i></a></li>
+          <li class=""><a href="./about.html"><i class="ion-ios-information-outline"></i></a></li>
+        </ul>
+      </div>
+      <div class="main-content active">
+        <div class="top-bar">
+          <div class="toggle">
+            <div class="toggle__burger"></div>
+          </div>
+          <div class="user">
+            <i class="ion-ios-person-outline"></i>
+            <ul class="settings-dropdown">
+              <li class="settings-item logout">Log out</li>
+              <li class="settings-item see-orders"><a href="./order.html">Orders</a></li>
+            </ul>
+            <i class="ion-ios-cart-outline open-cart"></i>
+          </div>
+        </div>
+        <div id="discover-shop">
+          <div class="wrap-discover">
+            <span id="title-discover">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </span>
+            <span id="small-title-discover">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste ab
+              earum veniam consequatur nihil nemo.
+            </span>
+            <a
+              href="./shop.html"
+              class="btn btn-primary go-shop hover-slide-bottom2top"
+              >
+              <span>Shop now !</span>
+            </a>
+            <div class="discover-figure">
+              <div>
+                <h2>32K+</h2>
+                <span>nike</span>
+              </div>
+              <div>
+                <h2>150K+</h2>
+                <span>adidas</span>
+              </div>
+              <div>
+                <h2>9K+</h2>
+                <span>Balenciaga</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <img src="../images/nike.png" alt="discover-img" id="img-discover">
+          </div>
+          
+        </div>
+        <h1 style="text-align:center" class="title-popular">Popular Product</h1>
+        <div class="popular-shop">
+          <div class="list-product-popular">
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/adidas.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/adidas.png" alt="blue">
+                </div>
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/nike.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/red.png" alt="blue">
+                </div>
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/nike.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/nike1.png" alt="blue">
+                </div>
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/balenciaga.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/balenciaga.png" alt="blue">
+                </div>
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/adidas.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/adidas2.png" alt="blue">
+                </div>
+                <!--<img id="pink" class="pink" src="images/pink.png" alt="blue">-->
+                <!--<img id="yellow" class="yellow" src="images/yellow.png" alt="blue">-->
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <div class="popular-product">
+              <div class="logo-product">
+                <img src="../images/brand/nike.svg" alt="logo">
+                <i class="ion-ios-more"></i>
+              </div>
+              <div class="main-images">
+                <span class="see-detail">SEE DETAIL <i class="ion-ios-eye-outline"></i></span>
+                <div class="main__box-image">
+                  <img id="blue" class="blue active" src="../images/shoes/nike2.png" alt="blue">
+                </div>
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                  <i class="ion-ios-star"></i>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+            <!-- <div class="popular-product">
+              <div class="logo-cart">
+                <i class="bx bx-shopping-bag"></i>
+              </div>
+              <div class="main-images">
+              
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+              </div>
+              <div class="color-price">
+                <div class="color-option">
+                  <span class="color">Colour:</span>
+                  <div class="circles">
+                    <span class="circle blue active" id="blue"></span>
+                    <span class="circle pink" id="pink"></span>
+                    <span class="circle yellow" id="yellow"></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span class="price_num">$09.00</span>
+                  <span class="price_letter">Nine dollar only</span>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div> -->
+            <!-- <div class="popular-product">
+              <div class="logo-cart">
+               
+                <i class="bx bx-shopping-bag"></i>
+              </div>
+              <div class="main-images">
+               
+              </div>
+              <div class="shoe-details">
+                <span class="shoe_name">ADDIDAS GAZE ZX</span>
+                <p>
+                  Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                  Eum, ea, ducimus!
+                </p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+              </div>
+              <div class="color-price">
+                <div class="color-option">
+                  <span class="color">Colour:</span>
+                  <div class="circles">
+                    <span class="circle blue active" id="blue"></span>
+                    <span class="circle pink" id="pink"></span>
+                    <span class="circle yellow" id="yellow"></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span class="price_num">$09.00</span>
+                  <span class="price_letter">Nine dollar only</span>
+                </div>
+              </div>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>ADD TO CART</button>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="sidecart">
+        <div class="sidecart__header">
+          <h2>
+            <i class="ion-ios-cart"></i>
+            MY CART 
+          </h2>
+          <i class="ion-close-round close-cart"></i>
+        </div>
+        <div class="cart__list-products">
+          
+        </div> 
+        <div class="subtotal">
+          <span>Total: $0.00</span>
+          <div class="btn btn-danger">ORDER</div>
+        </div>
+      </div>
+      <div class="groups-alert">
+      </div>
+      <footer class="ui-gradient-primary">
+        <span class="copyright">Copyright © 2022 Shop2h. All Rights Reserved.</span>
+      </footer>
+    </div>
+    <script src="../config.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../models/data.js"></script>
+    <script src="../models/UserModel.js"></script>
+    <script src="../models/ProductModel.js"></script>
+    <script src="../models/OrderModel.js"></script>
+    <script src="../events/CartEvent.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/home.js"></script>
+    
+  </body>
+</html>

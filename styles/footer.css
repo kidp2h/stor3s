@@ -1,0 +1,16 @@
+.copyright {
+  
+}
+footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: var(--ui-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white ;
+  bottom: 0;
+  z-index: 99999;
+  
+}

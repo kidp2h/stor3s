@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../icons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/topbar.css" />
+    <link rel="stylesheet" href="../styles/burger.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/card.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/bottombar.css">
+    <link rel="stylesheet" href="../styles/sidecart.css">
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/detail.css">
+    <title>Detail</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="overlay-modal"></div>
+      <div class="modal-user">
+        <div class="modal-header">
+          <h2 class="title">
+            <i class="ion-person"></i> 
+            <span>Login</span>
+          </h2>
+          <i class="ion-close-circled close"></i>
+        </div>
+        <div class="modal-content">
+          <div class="mdc modal-content-login">
+            <div class="modal-logo">
+              <img src="../images/logo.svg" alt="" srcset="" width="100" height="100">
+            </div>
+            <div class="form">
+              <div class="form__group">
+                <span>Username</span>
+                <input type="text" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form__group">
+                <span>Password</span>
+                <input type="password" id="password" placeholder="Enter your password">
+              </div>
+              
+              <button id="login">Login</button>
+            </div>
+            <span style="user-select: none">⎯⎯⎯⎯⎯ OR LOGIN WITH ⎯⎯⎯⎯⎯</span>
+            <div class="login-with">
+              <i class="ion-social-twitter-outline twitter"></i>
+              <i class="ion-social-github-outline github"></i>
+              <i class="ion-social-apple-outline apple"></i>
+              <i class="ion-social-facebook-outline fb"></i>
+            </div>
+            <div class="sign-up-forgot toSignUp">
+              <span >you don't have account ?</span>
+              <span>Forgot password</span>
+            </div>
+          </div>
+          <div class="mdc modal-content-register active form-register ">
+            <div class="modal-logo">
+              <img src="../images/logo.svg" alt="" srcset="" width="100" height="100">
+            </div>
+            <div class="form">
+              <div class="form__group col-2">
+                <div class="group__username">
+                  <span>Username</span>
+                  <input type="text" id="_username" placeholder="Enter your username">
+                </div>
+                <div>
+                  <span>Full name</span>
+                  <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+              </div>
+              <div class="form__group">
+                <span>Email</span>
+                <input type="text" id="_password" placeholder="Enter your email ">
+              </div>
+              <div class="form__group col-2">
+                <div class="group__username">
+                  <span>Password</span>
+                  <input type="password" id="_password" placeholder="Enter your password">
+                </div>
+                <div>
+                  <span>Password</span>
+                  <input type="password" id="re-password" class="password" placeholder="Re-enter your password">
+                </div>
+              </div>
+              <div class="form__group">
+                <span>Address</span>
+                <input type="text" id="_password" placeholder="Enter your address">
+              </div>
+              <button id="register">Register</button>
+            </div>
+            <div class="toSignIn">
+              <span>you want to sign in ?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar active">
+        <ul>
+          <li>
+            <a class="item" href="./index.html">
+              <img src="../images/logo.svg" alt="logo" width="60" height="60" />
+              <span class="title">Stor3S</span>
+            </a>
+          </li>
+          <li class="m-dashboard">
+            <a class="item" href="./index.html">
+              <i class="ion-ios-home-outline"></i>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="m-user">
+            <a class="item" href="./contact.html">
+              <i class="ion-ios-telephone-outline"></i>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+          <li class="m-product">
+            <a class="item" href="./shop.html">
+              <i class="ion-ios-pricetags-outline"></i>
+              <span class="title">Shop</span>
+            </a>
+          </li>
+          <li class="m-category">
+            <a class="item" href="./about.html">
+              <i class="ion-ios-information-outline"></i>
+              <span class="title">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-bar">
+        <ul>
+          <li class=""><a href="./index.html"><i class="ion-ios-home-outline"></i></a></li>
+          <li class=""><a href="./contact.html"><i class="ion-ios-telephone-outline"></i></a></li>
+          <li class=""><a href="./shop.html"><i class="ion-ios-pricetags-outline"></i></a></li>
+          <li class=""><a href="./about.html"><i class="ion-ios-information-outline"></i></a></li>
+        </ul>
+      </div>
+      <div class="main-content active">
+        <div class="top-bar">
+          <div class="toggle">
+            <div class="toggle__burger"></div>
+          </div>
+          <div class="user">
+            <i class="ion-ios-person-outline"></i>
+            <ul class="settings-dropdown">
+              <li class="settings-item logout">Log out</li>
+              <li class="settings-item see-orders">Orders</li>
+            </ul>
+            <i class="ion-ios-cart-outline open-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <div class="img" style="overflow: hidden">
+            <img src="../images/shoes/balenciaga.png" class="image-product">
+          </div>
+          <div class="separator"></div>
+          <div class="info-product">
+            <a href="./index.html" class="back-to-home"><i class="ion-arrow-left-c"></i>Back to home</a>
+            <span class="category-product">Balenciaga</span>
+            <span class="name-product">Triple S Balenciaga</span>
+            <div class="stars">
+              <i class="ion-ios-star"></i>
+              <i class="ion-ios-star"></i>
+              <i class="ion-ios-star"></i>
+              <i class="ion-ios-star"></i>
+              <i class="ion-ios-star"></i>
+            </div>
+            <div class="group-form-product">
+              <span>Select quality</span>
+              <div class="quality-product">
+                <div>Old</div>
+                <div>New</div>
+              </div>
+            </div>
+            <div class="group-form-product">
+              <span>Color</span>
+              <div class="list-color">
+                <div class="black"></div>
+                <div class="pink"></div>
+                <div class="green"></div>
+              </div>
+            </div>
+
+            <div class="group-form-product">
+              <span>Size</span>
+              <div class="list-size">
+                <div>36</div>
+                <div>37</div>
+                <div>38</div>
+                <div>39</div>
+                <div>40</div>
+              </div>
+            </div>
+            <div class="btn btn-primary add-to-cart">ADD TO CART</div>
+          </div>
+        </div>
+      </div>
+      <div class="sidecart">
+        <div class="sidecart__header">
+          <h2>
+            <i class="ion-ios-cart"></i>
+            MY CART 
+          </h2>
+          <i class="ion-close-round close-cart"></i>
+        </div>
+        <div class="cart__list-products">
+          <div class="cart__item">
+            <a href="">
+              <img src="../images/shoes/balenciaga.png" class="item-image" alt="">
+            </a>
+            
+            <div class="item-info">
+              <h4>Balenciaga Triple S</h4>
+              <div>
+                <span class="quantity">2</span>
+                <span>x</span>
+                <span class="price">8,492$</span>
+              </div>
+              <div class="increase-qty">
+                <span>+</span>
+                <input type="number" class="input-qty" value="2">
+                <span>-</span>
+              </div>
+            </div>
+            <div class="action">x</div>
+          </div>
+          <div class="cart__item">
+            <a href="">
+              <img src="../images/shoes/archlight.png" class="item-image" alt="">
+            </a>
+            
+            <div class="item-info">
+              <h4>Balenciaga Triple S</h4>
+              <div>
+                <span class="quantity">2</span>
+                <span>x</span>
+                <span class="price">8,492$</span>
+              </div>
+              <div class="increase-qty">
+                <span>+</span>
+                <input type="number" class="input-qty" value="2">
+                <span>-</span>
+              </div>
+            </div>
+            <div class="action">x</div>
+          </div>
+          <div class="cart__item">
+            <a href="">
+              <img src="../images/shoes/nikeairforce1.png" class="item-image" alt="">
+            </a>
+            
+            <div class="item-info">
+              <h4>Balenciaga Triple S</h4>
+              <div>
+                <span class="quantity">2</span>
+                <span>x</span>
+                <span class="price">8,492$</span>
+              </div>
+              <div class="increase-qty">
+                <span>+</span>
+                <input type="number" class="input-qty" value="2" min="0">
+                <span>-</span>
+              </div>
+            </div>
+            <div class="action">x</div>
+          </div>
+          
+        </div> 
+        <div class="subtotal">
+          <span>Total: $0.00</span>
+          <div class="btn btn-danger">ORDER</div>
+        </div>
+      </div>
+      <div class="groups-alert">
+      </div>
+      <footer class="ui-gradient-primary">
+        <span class="copyright">Copyright © 2022 Shop2h. All Rights Reserved.</span>
+      </footer>
+    </div>
+    <script src="../js/utils.js"></script>
+    <script src="../config.js"></script>
+    <script src="../models/data.js"></script>
+    <script src="../models/UserModel.js"></script>
+    <script src="../models/ProductModel.js"></script>
+    <script src="../events/CartEvent.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/detail.js"></script>
+  </body>
+</html>

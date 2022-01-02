@@ -1,0 +1,113 @@
+.logo-product {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  padding:0 10px;
+}
+.main-images img {
+  width:300px;
+  height:300px;
+  object-fit: contain;
+  transform: rotate(-20deg);
+  user-select: none;
+}
+.popular-shop .main-images img {
+  width:300px;
+  height:300px;
+  object-fit: contain;
+  transform: rotate(0deg) !important;
+  user-select: none;
+}
+.main-images .see-detail {
+    font-size: 1.5em;
+    color: white!important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    transform: translateY(500%);
+    cursor: pointer;
+    z-index: 88;
+    padding:10px;
+    transition: 0.5s;
+    background-color: var(--ui-background) !important;
+}
+.main-images {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+.main__box-image {
+  transition: 1s;
+}
+.main-images:hover .main__box-image {
+  filter: blur(2px);
+  transition: 1s;
+  transform:scale(1.5) rotate(360deg);
+}
+.main-images:not(:hover) .main__box-image {
+  transform:scale(1);
+  transition: 1s;
+}
+.main-images:hover .see-detail {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+.logo-product img {
+  width:50px;
+  height:50px;
+  object-fit: contain;
+}
+.logo-product i {
+  font-size:3em;
+  color: black;
+}
+.shoe_name{
+  font-size:1.5em;
+}
+.shoe-details p {
+  color: var(--gray);
+  font-size:0.9em;
+}
+.shoe-details .stars i {
+  color: yellow;
+  font-size:1.5em
+}
+.popular-product .button {
+  display:flex;
+  margin-top: 15px;
+  
+}
+.popular-product .button button {
+  outline: none;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: 60%;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  transition: all 0.5s;
+  background-size: 200% auto;
+}
+
+.popular-product .button button:hover {
+  background-position: right center;
+  transition:all 0.5s;
+  
+}
+
